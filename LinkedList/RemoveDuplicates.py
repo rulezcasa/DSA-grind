@@ -49,8 +49,6 @@ class LinkedList():
                     prev=prev.next # When no match, previous node shifts to pointer 2        
                     ptr2=ptr2.next # pointer 2 goes to next. #This is the main iteration step, the previous is kept track of to delete
             ptr1=ptr1.next
-
-
     
         
 ll=LinkedList()
