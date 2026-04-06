@@ -10,7 +10,9 @@ TOP K FREQUENT ELEMENTS
 APPROACH
 
 - Using hashmaps and sorted() function :
-    1. 
+    1. Initialize a hashmap to store keys and unqiue integers and their frequencies as values
+    2. Use the python's sorted function on hashmap.items and pass the value as the key to be sorted.
+    3. once sorted, pull out top k tuples, and from those pull out the keys i.e item[0] as a list and return
 '''
 
 
