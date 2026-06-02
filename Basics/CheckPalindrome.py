@@ -1,24 +1,32 @@
-def reverseNumber(n,revn):
-    while n>0:
-        digit=n%10
-        revn=(revn*10)+digit
-        n=n//10
-    
-    return revn
+'''
+CHECK PALINDROME
 
-def checkPalindrome(n,revn):
-    if(n==revn):
-        return True
-    else:
-        return False
+Palindrome : A number that is equal to the number when reversed
+'''
 
+'''
+APPROACH 
 
-if __name__=="__main__":
-    n=int(input("Enter number"))
+- Reverse the number by iterating till number is greater than 0
+    - split the digits by mod 10
+    - add the digit to the reversed number by multiplying by 10 (to keep place values in order)
+    - floor divide the number by 10 to keep only the remaining digits
+- If reversed number is equal to the original number, than it's a palindrome
+'''
+
+def check_plaindrome(num):
+    number=num
     revn=0
-    revn=reverseNumber(n,revn)
-    if(checkPalindrome(n,revn)):
-        print("The inputted number is a palindrome!")
-    else:
-        print("The inputted number is not a palindrome!")    
+
+    #reverse number
+    while num>0:
+        digit=num%10
+        revn=(revn*10) + digit
+        num = num // 10
     
+    if revn==number:
+        print("is palindrome")
+    else:
+        print("is not plaindrome")
+
+check_plaindrome(111)
