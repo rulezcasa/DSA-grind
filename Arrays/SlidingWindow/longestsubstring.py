@@ -13,7 +13,7 @@ APPROACH
     - If character is unique (not present in set), add to set and increment count
     - If character is present in set, break the inner loop (substring breaks) and move to the next starting string (outer loop).
 
-- Optimal :
+- Sliding window :
 1. Initialize a max_len, left pointer and charmap (keeping track of index)
 2 Iterate over the string :
     - If ch in charmap, then left becomes index of that ch + 1 (Basically, skipping that subsequence where repition occurs)
