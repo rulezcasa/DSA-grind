@@ -20,6 +20,13 @@ APPROACH
 3. If none of the windows have the permutation, just return False
 
 - Sliding window approach
+1. Initialize and maintain two maps - one char count and one window count
+2. Build for characters and build for the first window of size = len(s1) and
+3. The condition to check for each iteration is whether the window count = character count (i.e all characters in the window are same as the characters needed)
+4. Iterate from 1 (after first window) to the point where the right pointer wont go out of bounds for the window size (i.e len(s2)-len(s1)+1)
+    - For character exiting the window, decrement frequecy and if zero, delete the eleement
+    - For character entering the window, incremenet frequency
+    - At each step check if window count and char count are same, if yes return True other False
 '''
 
 
