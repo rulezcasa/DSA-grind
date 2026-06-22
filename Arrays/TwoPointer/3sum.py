@@ -55,7 +55,7 @@ print(threeSum(nums = [-1,0,1,2,-1,-4]))
 
 
 # Time complexity : O(N^2)
-# Space complexity : O(1)
+# Space complexity : O(k) where k is size of set
 def threeSum(nums: list[int]) -> list[list[int]]:
     nums=sorted(nums)
     triplets=set()
