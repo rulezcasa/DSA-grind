@@ -49,7 +49,7 @@ def findMin(nums: List[int]) -> int:
 print(findMin([11,13,15,17]))
 
 
-# Time complexity : O(N)
+# Time complexity : O(logN)
 # Space complexity : O(1)
 def findMin(nums: List[int]) -> int:
     left=0
