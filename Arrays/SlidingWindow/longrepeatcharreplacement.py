@@ -34,8 +34,7 @@ APPROACH
     
 2. Return max length
 '''
-
-"AABABBA"
+"AABACCA"
 
 # Time complexity : O(N^3)
 # Space complexity : O(len(substring)), N is length of substring

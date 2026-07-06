@@ -69,7 +69,7 @@ def minEatingSpeed(piles: List[int], h: int) -> int:
         if hours<=h:
             right=mid_value 
         else:
-            left=mid_value + 1 # if tailed for hours lesser than and EQUAL TO mid value, so + 1 to check ahead of mid value
+            left=mid_value + 1 # Failed for hours lesser than and EQUAL TO mid value i.e line 69. so + 1 to check ahead of mid value.
     
     return left
 

@@ -43,7 +43,7 @@ def max_subarray(nums=List[int]) -> int:
 print(max_subarray([5,4,-1,7,8]))
 
 
-# Kadan's algorithm
+# Kadane's algorithm
 
 # Time complexity : O(N)
 # Space complexity : O(1)

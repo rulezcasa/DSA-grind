@@ -23,7 +23,7 @@ APPROACH
 3. As long as left<right 
     - Pull out the minmum height (since we can't slant the container, the maximum height will be the minimum height between left and right)
     - compute area as minheight*(right-left) which is nothing but the width
-    - if ara is greater than maxarea update
+    - if area is greater than maxarea update
     - if left wall height < right wall height, the area is limited by the left wall, so fixing the right wall, increment left pointer to see if area can be maximized
     - else if right wall height < left wall height, the area is limited by the right wall, so fixing the left wall, decrement right pointer to see if area can be maximized
 4. Repeat and return the maxarea

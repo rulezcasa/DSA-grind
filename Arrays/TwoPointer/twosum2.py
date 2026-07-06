@@ -60,5 +60,4 @@ print(twoSum(numbers = [2,7,11,15], target = 9))
 
 
 
-
-
+[1, 2, 2, 2, 7]

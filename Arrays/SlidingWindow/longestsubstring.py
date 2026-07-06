@@ -49,7 +49,8 @@ def lengthOfLongestSubstring(s):
 
     for right, ch in enumerate(s):
         if ch in charmap:
-            left = max(left, charmap[ch] + 1)
+            left = max(left, charmap[ch] + 1) # When tracking a previous occurent outside of the window, if just direct + 1 update it will pull the window back
+                                              # So just check which is higher, existing left or the +1, use that directly
 
         charmap[ch] = right
         max_len = max(max_len, right - left + 1)

@@ -18,7 +18,7 @@ APPROACH
         - Check if character frequency in window count is less that character frequency in char count (ensures, all characters in t are covered)
 4. Return min_string
 
-- Sliding window approach :
+- Sliding window approach : (Idea is have and need keep track of characters, by compating we know if we have a valid string or not)
 1. Initialize an empty char count and window count map, min string and min length
 2. Build the char count with t and initilize need to the length of it (i.e unique values for char count)
 3. initialize have to 0 and left pointer also to 0 (starting)
@@ -87,7 +87,7 @@ def minWindow(s: str, t: str) -> str:
     for right in range(0,len(s)):
         window_count[s[right]]=window_count.get(s[right],0)+1
         if s[right] in char_count and window_count[s[right]]==char_count[s[right]]:
-            have+=1
+            have+=1 # have is updated only when the frequency of character needed matches frequency of that character in window
         while have==need:
             if (right - left + 1) < min_length:
                 min_length = right - left + 1

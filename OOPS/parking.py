@@ -215,20 +215,3 @@ lot.display_availability()
 lot.exit_vehicle("CAR-222")
 
 lot.display_availability()
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-        
-    

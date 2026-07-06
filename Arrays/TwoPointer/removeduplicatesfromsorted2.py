@@ -21,7 +21,7 @@ APPROACH
 
 - Two pointer: (everything before write is valid, we verify with read and see if it should be accepted or skipped)
 1. If nums is an array of size 2 or lesser, just retun the length (edge case)
-2. initialize write = 2 and run a loop iterateing read from 2 to length of array.  
+2. initialize write = 2 and run a loop iterating read from 2 to length of array.  
     - If value of read and write-2 are not the same (read is the third incoming element, we are checking that with second before element, if same cant be accepted),
         - make value of write the value of read (i.e accept that element and repalce it by one position).
         - increment write by 1
@@ -31,7 +31,7 @@ APPROACH
 
 # Time complexity : O(N)
 # Space complexity : O(N)
-from typing import List
+# from typing import List
 # def removeDuplicates(nums: List[int]) -> int:
 #     freqmap={}
 #     result=[]
