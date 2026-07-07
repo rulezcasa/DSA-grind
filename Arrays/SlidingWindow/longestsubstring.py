@@ -15,7 +15,7 @@ APPROACH
 
 - Sliding window :
 1. Initialize a max_len, left pointer and charmap (keeping track of index)
-2 Iterate over the string :
+2 Iterate right over the string :
     - If ch in charmap, then left becomes index of that ch + 1 (Basically, skipping that subsequence where repition occurs)
     - If ch not in charmap, add unique char with index to charmap and update maxlength (right-left+1)
 3. Return max length

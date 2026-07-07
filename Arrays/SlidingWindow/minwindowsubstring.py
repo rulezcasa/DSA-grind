@@ -11,16 +11,16 @@ APPROACH
 - Brute force approach :
 1. Initialize an empty char count map, min_string and min_length
 2. Iterate over t and build the char count map.
-3. Iterate over s - left pointer (outer)
+3. Iterate over s - left pointer     (outer)
     - Initialize empty window count map
     - Iterate right pointer from left pointer to end
         - if character is part of char count, add it to window count with updated frequeny
         - Check if character frequency in window count is less that character frequency in char count (ensures, all characters in t are covered)
 4. Return min_string
 
-- Sliding window approach : (Idea is have and need keep track of characters, by compating we know if we have a valid string or not)
+- Sliding window approach : (Idea is have and need keep track of characters, by comparing we know if we have a valid string or not)
 1. Initialize an empty char count and window count map, min string and min length
-2. Build the char count with t and initilize need to the length of it (i.e unique values for char count)
+2. Build the char count with t and initialize need to the length of it (i.e unique values for char count)
 3. initialize have to 0 and left pointer also to 0 (starting)
 4. Iterate over s (right pointer) and add element to window_count:
     - if the element is present in char_count and the frequency is same in both char_count and window_count, then we have that element (have+=1)
