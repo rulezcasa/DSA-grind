@@ -66,6 +66,7 @@ def characterReplacement(s: str, k: int) -> int:
     freq={}
     left=0
     max_length=0
+    max_freq=0
 
     for right, ch in enumerate(s):
         freq[ch]=freq.get(ch,0)+1

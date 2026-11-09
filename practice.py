@@ -1,23 +1,9 @@
-'''
-Given an array nums and an integer k, find the maximum sum of any contiguous subarray of size exactly k.
-Example: nums = [2, 1, 5, 1, 3, 2], k = 3 → Output: 9 (subarray [5,1,3])
-'''
+stk=[]
 
-from typing import List
+stk.append(19)
+stk.append(10)
+stk.append(23)
 
-def maxsum(nums : List[int], k: int):
-    running_sum=0
-    for num in range(0,k):
-        running_sum+=nums[num]
-    max_sum=running_sum
-        
-    for left in range(1, len(nums)-k+1):
-        right=left+k-1
-        running_sum-=nums[left-1]
-        running_sum+=nums[right]
-        max_sum=max(max_sum,running_sum)
-    
-    return max_sum
+stk.pop()
 
-
-print(maxsum(nums = [4,4,4,4], k=2))
+print(stk)
